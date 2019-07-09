@@ -1,0 +1,17 @@
+.box {
+	background: red;
+	width: 100px;
+	height: 100px;
+	padding: 20px;
+	border: 10px solid green;
+	margin: 30px;
+	box-sizing: border-box;
+}
+
+div p {
+	background: green;
+}
+
+#outer-id {
+	background: red;
+}
