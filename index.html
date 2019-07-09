@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+	<script>
+		document.write("Here it starts...");
+	</script>
+</head>
+<body>
+	<a href="www.google.com"></a>
+	<div id="content"></div>
+	<ul>
+		<li data-type="veg" data-distance="2miles" data-identifier="10318">
+			Salad King
+		</li>
+	</ul>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		var mycars = new Array();
+		mycars[0] = "Saab";
+		mycars[1] = "Volvo";
+		mycars[2] = "BMW";
+
+		localStorage["mycars"] = JSON.stringify(mycars);
+		sessionStorage["altnate"] = JSON.stringify(mycars);
+
+		var cars = JSON.parse(localStorage["mycars"]);
+
+		console.log(cars);
+		$(document).ready(function() {
+			$.ajax({
+				url: "http://dummy.restapiexample.com/api/v1/employees",
+				success: function(data) {
+					// $("#content").text(data);
+				}
+			})
+			var distance = $("li").data("distance");
+			console.log(distance);
+		})
+	</script>
+</body>
+</html>
