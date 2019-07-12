@@ -16,5 +16,7 @@
     "url": "https://github.com/Moninar/HTML-CSS-JavaScript/issues"
   },
   "homepage": "https://github.com/Moninar/HTML-CSS-JavaScript#readme",
-  "dependencies": {}
+  "dependencies": {
+    "compass": "^0.1.1"
+  }
 }
